@@ -1,0 +1,8 @@
+V6 layout correction
+
+- Restored centered max-width containers.
+- Reduced oversized homepage headline.
+- Added controlled headline line breaks.
+- Rebalanced the hero content and quote form.
+- Tightened header, section, grid, and footer spacing.
+- Improved tablet and mobile breakpoints.

@@ -1,0 +1,8 @@
+GOOGLE REVIEWS UPDATE — V4
+
+- Added a dedicated Google review call-to-action section to the homepage.
+- Added a Google review/profile link to the footer across all HTML pages.
+- Added the Google profile URL to LocalBusiness structured data.
+- No review count, star rating, or customer quote was fabricated.
+- Current link uses an exact Google Maps business search with the company name and phone number.
+- For a one-click review form, replace the URL with the direct link from the Google Business Profile “Ask for reviews” button.

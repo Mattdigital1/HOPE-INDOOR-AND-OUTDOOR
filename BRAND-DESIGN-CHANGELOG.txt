@@ -1,0 +1,15 @@
+HOPE INDOOR & OUTDOOR — BRAND & DESIGN UPDATE
+
+Completed updates:
+- Replaced the previous placeholder logo with the supplied Hope Indoor & Outdoor logo.
+- Added a light version of the supplied logo for the dark website header and footer.
+- Changed the website palette to Hope blue, black, white, and cool gray.
+- Removed the previous green and gold visual direction.
+- Replaced generic stock imagery with local Metairie / Greater New Orleans-style service imagery.
+- Updated homepage, gallery, service pages, contact page, service-area page, and CTA imagery.
+- Increased the hero quote-form width and improved field, label, consent, and button spacing.
+- Added responsive form behavior for tablet and mobile widths.
+- Updated Open Graph and structured-data image references.
+
+Brand blue used: #00A9E8
+Primary dark: #05080B

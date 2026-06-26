@@ -1,0 +1,378 @@
+:root{--f950:#07140d;--f900:#0d2116;--f800:#173b27;--f700:#205137;--f600:#2b6a48;--gold:#d7ad42;--gold2:#e4c163;--cream:#fbfaf5;--cream2:#f4f1e8;--line:#e9e3d4;--ink:#132018;--muted:#526158;--white:#fff;--shadow:0 18px 55px rgba(7,20,13,.15);--r:18px;--container:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased}body.nav-open{}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button{cursor:pointer}.container{width:min(calc(100% - 40px),var(--container));margin:auto}.skip-link{position:absolute;left:-9999px;top:10px;z-index:9999;background:var(--gold);padding:10px 14px;border-radius:8px;font-weight:800}.skip-link:focus{left:10px}.section-pad{padding:104px 0}.section-pad--sm{padding:76px 0}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--f600);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.eyebrow:before{content:"";width:28px;height:2px;background:var(--gold)}.eyebrow--light{color:var(--gold2)}.section-title{font-family:Oswald,sans-serif;font-size:clamp(2.25rem,5vw,4.65rem);line-height:.98;letter-spacing:-.025em;text-transform:uppercase;margin:14px 0 18px}.section-title--light{color:#fff}.section-copy{max-width:720px;color:var(--muted);font-size:1.02rem}.section-copy--light{color:rgba(255,255,255,.76)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:0 24px;border:1px solid transparent;border-radius:999px;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;font-weight:800;transition:.2s ease}.btn:hover{transform:translateY(-2px)}.btn--gold{background:var(--gold);color:var(--f950);box-shadow:0 10px 24px rgba(215,173,66,.25)}.btn--gold:hover{background:var(--gold2)}.btn--forest{background:var(--f800);color:#fff}.btn--forest:hover{background:var(--f700)}.btn--outline{border-color:rgba(255,255,255,.45);color:#fff}.btn--outline:hover{background:#fff;color:var(--f950)}.btn--outline-dark{border-color:var(--f800);color:var(--f800)}.btn--outline-dark:hover{background:var(--f800);color:#fff}.btn--wide{width:100%}
+.topbar{background:var(--f950);color:rgba(255,255,255,.82);font-size:.78rem}.topbar__inner{min-height:36px;display:flex;align-items:center;justify-content:space-between;gap:20px}.topbar__group{display:flex;align-items:center;gap:18px}.topbar a:hover{color:var(--gold2)}.site-header{position:sticky;top:0;z-index:1000;background:rgba(13,33,22,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}.site-header__inner{min-height:84px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:28px}.header-actions{justify-self:end}.logo img{width:216px}.nav{display:flex;align-items:center;justify-content:center;gap:5px}.nav__link,.nav__button{display:inline-flex;align-items:center;gap:6px;color:rgba(255,255,255,.88);padding:12px 11px;border:0;background:none;text-transform:uppercase;font-size:.72rem;letter-spacing:.1em;font-weight:800;border-radius:8px}.nav__link:hover,.nav__button:hover,.nav__link[aria-current=page]{color:var(--gold2);background:rgba(255,255,255,.05)}.nav__item{position:relative}.nav__dropdown{position:absolute;top:calc(100% + 12px);left:0;width:290px;padding:12px;background:#fff;border-radius:14px;box-shadow:var(--shadow);opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s}.nav__item:hover .nav__dropdown,.nav__item:focus-within .nav__dropdown{opacity:1;visibility:visible;transform:none}.nav__dropdown a{display:block;padding:11px 12px;border-radius:8px;color:var(--f900);font-size:.88rem;font-weight:700}.nav__dropdown a:hover{background:var(--cream2);color:var(--f600)}.header-actions{display:flex;align-items:center;gap:12px}.header-phone{color:#fff;font-family:Oswald,sans-serif;font-size:1.05rem;font-weight:600;white-space:nowrap}.menu-toggle{display:none;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;align-items:center;justify-content:center}
+.hero{min-height:720px;position:relative;background:linear-gradient(90deg,rgba(7,20,13,.93),rgba(7,20,13,.76) 48%,rgba(7,20,13,.4)),url('../img/gallery-landscaping-residential.png') center/cover}.hero__inner{display:grid;grid-template-columns:1.15fr .7fr;align-items:center;gap:70px;padding:84px 0 92px}.hero__content{color:#fff}.hero__title{font-family:Oswald,sans-serif;font-size:clamp(3.5rem,8vw,7.25rem);line-height:.88;letter-spacing:-.035em;text-transform:uppercase;margin:18px 0 22px;max-width:790px}.hero__title span{color:var(--gold2)}.hero__copy{max-width:690px;font-size:1.1rem;color:rgba(255,255,255,.84)}.hero__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.hero__micro{display:flex;flex-wrap:wrap;gap:18px 26px;margin-top:34px;color:rgba(255,255,255,.82);font-size:.86rem;font-weight:700}.hero__micro span{display:inline-flex;gap:8px;align-items:center}.hero__micro i{color:var(--gold2)}
+.quote-card,.contact-form-panel{background:rgba(255,255,255,.98);border-radius:var(--r);padding:32px;box-shadow:0 28px 70px rgba(0,0,0,.28);border-top:6px solid var(--gold)}.quote-card__kicker{margin:0 0 3px;font-size:.72rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:var(--f600)}.quote-card h2,.contact-form-panel h2{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:2rem;line-height:1;margin:0 0 18px}.form-grid{display:grid;gap:13px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:6px}.field label{font-size:.76rem;font-weight:800}.field input,.field textarea,.field select{width:100%;padding:12px 13px;border:1px solid #d9ded8;border-radius:9px;background:#fff;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--f600);box-shadow:0 0 0 3px rgba(43,106,72,.12)}.field textarea{min-height:92px;resize:vertical}.form-consent{display:grid;grid-template-columns:18px 1fr;gap:9px;font-size:.68rem;line-height:1.45;color:#66736b}.form-note{font-size:.7rem;color:#6f7a73;margin:0}.hp-field{position:absolute;left:-9999px;opacity:0}
+.trust-strip{background:var(--gold);color:var(--f950)}.trust-strip__grid{display:grid;grid-template-columns:repeat(5,1fr)}.trust-item{min-height:94px;padding:20px 14px;display:flex;align-items:center;justify-content:center;text-align:center;gap:10px;border-right:1px solid rgba(7,20,13,.18);font-size:.76rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.trust-item:last-child{border:0}.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:72px;align-items:center}.media-stack{position:relative;min-height:570px}.media-stack__main{position:absolute;inset:0 84px 46px 0;border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}.media-stack__main img{width:100%;height:100%;object-fit:cover}.media-stack__accent{position:absolute;right:0;bottom:0;width:45%;aspect-ratio:1;border:10px solid var(--cream);border-radius:50%;background:var(--f800);color:#fff;display:grid;place-items:center;text-align:center;padding:28px;box-shadow:var(--shadow)}.media-stack__accent strong{display:block;color:var(--gold2);font-family:Oswald;font-size:2.1rem;line-height:1}.media-stack__accent span{font-size:.75rem;text-transform:uppercase;letter-spacing:.11em;font-weight:800}.check-list{display:grid;grid-template-columns:1fr 1fr;gap:13px 18px;margin:28px 0 32px;padding:0;list-style:none}.check-list li{display:flex;gap:9px;font-weight:700;font-size:.92rem}.check-list i{color:var(--f600);width:18px;flex:none}
+.services-section{background:var(--f950);color:#fff}.section-head-row{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:44px}.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service-card{position:relative;min-height:390px;border-radius:var(--r);overflow:hidden;background:var(--f800);box-shadow:0 12px 30px rgba(0,0,0,.18)}.service-card img{width:100%;height:100%;object-fit:cover;transition:.45s}.service-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 28%,rgba(7,20,13,.96))}.service-card__content{position:absolute;z-index:2;inset:auto 0 0;padding:24px}.service-card__icon{width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--f950);display:grid;place-items:center;margin-bottom:15px}.service-card h3{font-family:Oswald;text-transform:uppercase;font-size:1.55rem;line-height:1;margin:0 0 8px}.service-card p{margin:0;color:rgba(255,255,255,.72);font-size:.87rem;line-height:1.55}.service-card__link{margin-top:16px;display:inline-flex;gap:7px;align-items:center;color:var(--gold2);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;font-weight:900}.service-card:hover img{transform:scale(1.055)}
+.process{background:var(--gold)}.process__head{text-align:center;max-width:760px;margin:0 auto 44px}.process__head .eyebrow{color:var(--f950)}.process__head .eyebrow:before{background:var(--f800)}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}.process-step{text-align:center;position:relative;padding:0 12px}.process-step:not(:last-child):after{content:"";position:absolute;top:34px;left:65%;width:70%;border-top:1px dashed rgba(7,20,13,.38)}.process-step__num{width:70px;height:70px;margin:0 auto 18px;border-radius:50%;background:var(--f950);color:var(--gold2);display:grid;place-items:center;font-family:Oswald;font-size:1.6rem;position:relative;z-index:2}.process-step h3{font-family:Oswald;text-transform:uppercase;font-size:1.25rem;margin:0 0 7px}.process-step p{font-size:.87rem;color:rgba(7,20,13,.75);margin:0}
+.gallery-section{background:var(--cream2)}.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:180px;gap:14px}.gallery-item{position:relative;overflow:hidden;border:0;border-radius:16px;padding:0;background:#ddd;cursor:zoom-in}.gallery-item:nth-child(1){grid-column:span 5;grid-row:span 2}.gallery-item:nth-child(2){grid-column:span 3;grid-row:span 2}.gallery-item:nth-child(3),.gallery-item:nth-child(4){grid-column:span 4}.gallery-item:nth-child(5){grid-column:span 4;grid-row:span 2}.gallery-item:nth-child(n+6){grid-column:span 4}.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.4s}.gallery-item:hover img{transform:scale(1.04);filter:brightness(.85)}.gallery-note{font-size:.8rem;color:var(--muted);margin-top:18px}.standards-grid,.faq-grid,.areas-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:68px;align-items:start}.standard-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.standard-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 22px rgba(7,20,13,.08)}.standard-card__icon{width:44px;height:44px;border-radius:12px;background:var(--cream2);color:var(--f700);display:grid;place-items:center;margin-bottom:18px}.standard-card h3{font-family:Oswald;text-transform:uppercase;font-size:1.25rem;margin:0 0 8px;color:var(--f900)}.standard-card p{margin:0;color:var(--muted);font-size:.88rem}.faq-section{background:var(--f900);color:#fff}.accordion{border-top:1px solid rgba(255,255,255,.16)}.accordion-item{border-bottom:1px solid rgba(255,255,255,.16)}.accordion-button{width:100%;padding:22px 0;border:0;background:none;color:#fff;display:flex;justify-content:space-between;gap:20px;text-align:left;font-weight:800}.accordion-button i{color:var(--gold2);transition:.2s}.accordion-button[aria-expanded=true] i{transform:rotate(45deg)}.accordion-panel{display:grid;grid-template-rows:0fr;transition:.25s}.accordion-panel>div{overflow:hidden}.accordion-panel p{margin:0 0 22px;color:rgba(255,255,255,.72)}.accordion-item.is-open .accordion-panel{grid-template-rows:1fr}
+.area-map{min-height:510px;position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(rgba(13,33,22,.1),rgba(13,33,22,.1)),url('../img/hope-lawn-care-metairie.webp') center/cover}.area-map__card{position:absolute;left:24px;right:24px;bottom:24px;background:rgba(255,255,255,.94);padding:22px;border-radius:16px}.area-map__card strong{display:block;font-family:Oswald;text-transform:uppercase;font-size:1.45rem}.area-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:28px 0 30px;padding:0;list-style:none}.area-list li{display:flex;align-items:center;gap:9px;padding:10px 12px;background:var(--cream2);border-radius:9px;font-weight:700;font-size:.9rem}.area-list i{color:var(--f600);width:17px}.final-cta{background:linear-gradient(90deg,rgba(7,20,13,.94),rgba(7,20,13,.72)),url('../img/hope-lawn-care-metairie.webp') center/cover;color:#fff;padding:82px 0}.final-cta__inner{display:flex;align-items:center;justify-content:space-between;gap:40px}.final-cta h2{font-family:Oswald;text-transform:uppercase;font-size:clamp(2.5rem,5vw,4.8rem);line-height:.98;margin:10px 0 0}.final-cta__actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}
+.site-footer{background:var(--f950);color:rgba(255,255,255,.72)}.footer-main{padding:70px 0 48px;display:grid;grid-template-columns:1.25fr .7fr .9fr .9fr;gap:48px}.footer-brand img{width:225px;margin-bottom:18px}.footer-brand p{max-width:420px;font-size:.9rem}.footer-heading{font-family:Oswald;text-transform:uppercase;color:#fff;font-size:1.05rem;margin:5px 0 18px}.footer-links,.footer-contact{display:grid;gap:10px;font-size:.88rem}.footer-links a:hover,.footer-contact a:hover{color:var(--gold2)}.footer-contact div{display:grid;grid-template-columns:22px 1fr;gap:10px}.socials{display:flex;gap:10px;margin-top:20px}.socials a{width:40px;height:40px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:grid;place-items:center;color:#fff}.socials a:hover{background:var(--gold);color:var(--f950)}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 0;font-size:.77rem}.footer-bottom__inner{display:flex;justify-content:space-between;gap:20px}.footer-legal{display:flex;gap:14px}
+.page-hero{min-height:480px;display:grid;align-items:end;color:#fff;background:linear-gradient(90deg,rgba(7,20,13,.94),rgba(7,20,13,.5)),var(--page-bg) center/cover}.page-hero__inner{padding:90px 0 78px}.page-hero h1{font-family:Oswald;text-transform:uppercase;font-size:clamp(3rem,7vw,6rem);line-height:.92;margin:14px 0 16px;max-width:900px}.page-hero p{max-width:700px;color:rgba(255,255,255,.82);font-size:1.1rem}.breadcrumbs{display:flex;gap:9px;flex-wrap:wrap;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:rgba(255,255,255,.7)}.content-grid{display:grid;grid-template-columns:minmax(0,1fr) 350px;gap:56px;align-items:start}.prose h2,.prose h3{font-family:Oswald;text-transform:uppercase;line-height:1.05}.prose h2{font-size:clamp(2rem,4vw,3.4rem);margin:0 0 18px}.prose h3{font-size:1.55rem;margin:34px 0 12px}.prose p,.prose li{color:var(--muted)}.prose-image{border-radius:var(--r);overflow:hidden;margin:32px 0;box-shadow:0 8px 22px rgba(7,20,13,.08)}.prose-image img{width:100%;aspect-ratio:16/9;object-fit:cover}.sidebar-card{position:sticky;top:122px;background:var(--f900);color:#fff;padding:28px;border-radius:18px;box-shadow:var(--shadow)}.sidebar-card h3{font-family:Oswald;text-transform:uppercase;font-size:1.8rem;margin:0 0 10px}.sidebar-card p{color:rgba(255,255,255,.72);font-size:.9rem}.sidebar-card__links{display:grid;gap:8px;margin:20px 0 24px}.sidebar-card__links a{padding:11px 12px;border-radius:8px;background:rgba(255,255,255,.06);font-size:.82rem;font-weight:700}.sidebar-card__links a:hover{background:rgba(255,255,255,.12);color:var(--gold2)}.contact-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}.contact-card{background:var(--f900);color:#fff;border-radius:var(--r);padding:34px}.contact-card h2{font-family:Oswald;text-transform:uppercase;font-size:2.5rem;margin:0 0 12px}.contact-card p{color:rgba(255,255,255,.72)}.contact-points{display:grid;gap:16px;margin-top:26px}.contact-point{display:grid;grid-template-columns:46px 1fr;gap:12px;align-items:center}.contact-point__icon{width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--f950);display:grid;place-items:center}.contact-point small{display:block;color:rgba(255,255,255,.58);text-transform:uppercase;font-size:.66rem;letter-spacing:.12em;font-weight:800}.contact-point strong{color:#fff}.contact-form-panel{box-shadow:0 8px 22px rgba(7,20,13,.08)}.legal-page{max-width:880px}.legal-page h1{font-family:Oswald;text-transform:uppercase;font-size:clamp(2.7rem,6vw,5rem);line-height:.95}.legal-page h2{font-family:Oswald;text-transform:uppercase;margin-top:36px}.legal-page p,.legal-page li{color:var(--muted)}.thankyou{min-height:68vh;display:grid;place-items:center;text-align:center;padding:100px 20px}.thankyou__icon{width:86px;height:86px;margin:0 auto 22px;border-radius:50%;background:var(--gold);display:grid;place-items:center}.thankyou h1{font-family:Oswald;text-transform:uppercase;font-size:clamp(3rem,7vw,6rem);line-height:.92;margin:0 0 18px}.thankyou p{max-width:650px;margin:0 auto 28px;color:var(--muted)}.lightbox{position:fixed;inset:0;z-index:3000;background:rgba(0,0,0,.9);display:none;place-items:center;padding:30px}.lightbox.is-open{display:grid}.lightbox img{max-width:min(1100px,92vw);max-height:86vh;border-radius:12px}.lightbox__close{position:absolute;right:22px;top:22px;width:48px;height:48px;border:1px solid rgba(255,255,255,.4);border-radius:50%;background:rgba(0,0,0,.3);color:#fff}.mobile-cta{display:none}.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s,transform .65s}.reveal.is-visible{opacity:1;transform:none}
+@media(max-width:1080px){.nav{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(5,8,11,.98);padding:8px 0 20px;overflow-y:auto;max-height:72vh;flex-direction:column;align-items:stretch;justify-content:flex-start;box-shadow:0 24px 56px rgba(0,0,0,.45);border-top:1px solid rgba(255,255,255,.08);z-index:999}.nav.is-open{display:flex}.nav__link,.nav__button{width:100%;justify-content:space-between;font-size:.88rem;padding:14px 24px;border-bottom:1px solid rgba(255,255,255,.07);border-radius:0}.nav__dropdown{position:static;width:100%;display:none;opacity:1;visibility:visible;transform:none;background:rgba(255,255,255,.05);box-shadow:none;margin-top:8px}.nav__item.is-open .nav__dropdown{display:block}.nav__dropdown a{color:rgba(255,255,255,.8)}.menu-toggle{display:inline-flex}.header-actions .btn{display:none}.hero__inner{grid-template-columns:1fr .72fr;gap:34px}.services-grid{grid-template-columns:repeat(2,1fr)}.footer-main{grid-template-columns:1.2fr 1fr 1fr}.footer-main>:last-child{grid-column:2/4}}
+@media(max-width:820px){.topbar__inner{justify-content:center}.topbar__group:nth-child(2){display:none}.site-header__inner{min-height:74px}.logo img{width:188px}.header-phone{display:none}.hero__inner{grid-template-columns:1fr;padding:72px 0 74px}.quote-card{max-width:620px}.trust-strip__grid{grid-template-columns:repeat(2,1fr)}.trust-item:nth-child(2n){border-right:0}.trust-item:last-child{grid-column:1/-1}.about-grid,.standards-grid,.faq-grid,.areas-grid,.contact-layout{grid-template-columns:1fr}.section-head-row{align-items:flex-start;flex-direction:column}.process-grid{grid-template-columns:repeat(2,1fr)}.process-step:after{display:none}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:220px}.gallery-item:nth-child(n){grid-column:span 1;grid-row:span 1}.gallery-item:nth-child(1),.gallery-item:nth-child(5){grid-row:span 2}.content-grid{grid-template-columns:1fr}.sidebar-card{position:static}.final-cta__inner{align-items:flex-start;flex-direction:column}.final-cta__actions{justify-content:flex-start}.footer-main{grid-template-columns:1fr 1fr}.footer-main>:last-child{grid-column:auto}}
+@media(max-width:560px){.container{width:min(calc(100% - 28px),var(--container))}.section-pad{padding:78px 0}.section-pad--sm{padding:60px 0}.logo img{width:164px}.site-header__inner{gap:10px}.hero{background-position:58% center}.hero__title{font-size:clamp(2.55rem,12vw,4.2rem);line-height:.9;overflow-wrap:normal}.hero__actions{display:grid}.hero__actions .btn{width:100%}.quote-card,.contact-form-panel{padding:24px 18px}.form-row{grid-template-columns:1fr}.trust-strip__grid{grid-template-columns:1fr}.trust-item{border-right:0}.trust-item:last-child{grid-column:auto}.media-stack{min-height:420px}.media-stack__main{inset:0 36px 32px 0}.media-stack__accent{width:48%;padding:18px;border-width:7px}.media-stack__accent strong{font-size:1.55rem}.check-list,.services-grid,.process-grid,.standard-cards,.area-list{grid-template-columns:1fr}.service-card{min-height:340px}.gallery-grid{grid-template-columns:1fr;grid-auto-rows:250px}.gallery-item:nth-child(n){grid-column:span 1;grid-row:span 1}.footer-main{grid-template-columns:1fr;gap:34px}.footer-bottom__inner{flex-direction:column}.mobile-cta{position:fixed;z-index:2200;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;background:var(--f950);box-shadow:0 -8px 30px rgba(0,0,0,.25)}.mobile-cta a{min-height:58px;display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;text-transform:uppercase;font-size:.72rem;letter-spacing:.08em;font-weight:900}.mobile-cta a:last-child{background:var(--gold);color:var(--f950)}body{padding-bottom:58px}.page-hero{min-height:410px}.page-hero__inner{padding:70px 0 60px}.contact-card{padding:26px 20px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+
+/* SEO CONTENT ENHANCEMENTS */
+.seo-local{background:#fff}.seo-local__intro{max-width:900px;margin-bottom:38px}.seo-card-grid,.city-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.seo-card,.city-card{background:var(--cream2);border:1px solid var(--line);border-radius:16px;padding:26px}.seo-card h3,.city-card h3{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:1.42rem;line-height:1.08;margin:0 0 10px}.seo-card p,.city-card p{margin:0;color:var(--muted);font-size:.9rem}.seo-card a,.city-card a,.local-link-box a{color:var(--f600);font-weight:800;text-decoration:underline;text-decoration-color:rgba(43,106,72,.35);text-underline-offset:3px}.location-keywords{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:28px;padding:18px 20px;background:var(--f900);color:#fff;border-radius:14px}.location-keywords strong{margin-right:4px}.location-keywords a{padding:7px 11px;border:1px solid rgba(255,255,255,.2);border-radius:999px;font-size:.78rem;font-weight:800}.location-keywords a:hover{background:var(--gold);color:var(--f950)}.local-link-box{margin:32px 0;padding:22px 24px;border-left:5px solid var(--gold);background:var(--cream2);border-radius:0 12px 12px 0}.local-link-box strong{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:1.25rem}.local-link-box p{margin:7px 0 0}.inline-faq{display:grid;gap:12px;margin:18px 0 34px}.inline-faq>div{padding:20px 22px;border:1px solid var(--line);border-radius:13px;background:#fff}.inline-faq h4{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:1.12rem;line-height:1.1;margin:0 0 7px}.inline-faq p{margin:0}.city-seo{background:#fff}.city-grid{grid-template-columns:repeat(2,1fr)}.city-card{padding:30px;background:var(--cream)}
+@media(max-width:900px){.seo-card-grid{grid-template-columns:repeat(2,1fr)}.city-grid[style*="repeat(3"]{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:560px){.seo-card-grid,.city-grid{grid-template-columns:1fr}.city-grid[style*="repeat(3"]{grid-template-columns:1fr!important}.seo-card,.city-card{padding:22px}.location-keywords{align-items:flex-start}.location-keywords strong{width:100%}}
+
+
+/* HOPE BRAND V3 START */
+/* Exact brand direction from the supplied Hope Indoor & Outdoor logo:
+   black, white, cool gray, and Hope blue (#00A9E8). */
+:root{
+  --f950:#05080b;
+  --f900:#0a0f14;
+  --f800:#111a21;
+  --f700:#17252f;
+  --f600:#009bd6;
+  --gold:#00a9e8;
+  --gold2:#4cc6f2;
+  --cream:#f8fafb;
+  --cream2:#eef4f7;
+  --line:#dce5ea;
+  --ink:#0b1116;
+  --muted:#55646e;
+  --shadow:0 18px 55px rgba(4,15,22,.16);
+}
+
+body{background:var(--cream)}
+.skip-link{background:var(--gold);color:#fff}
+.topbar{background:#020406;color:rgba(255,255,255,.82)}
+.topbar a:hover{color:var(--gold2)}
+.site-header{background:rgba(5,8,11,.97);border-bottom:1px solid rgba(255,255,255,.09)}
+.site-header__inner{min-height:96px}
+.logo{display:flex;align-items:center}
+.logo img{width:158px;height:auto;max-height:76px;object-fit:contain}
+.nav__link:hover,.nav__button:hover,.nav__link[aria-current=page]{color:var(--gold2);background:rgba(0,169,232,.10)}
+.nav__dropdown a:hover{background:#edf8fc;color:#007cac}
+.header-phone{color:#fff}
+
+.btn--gold{background:var(--gold);color:#fff;box-shadow:0 10px 24px rgba(0,169,232,.28)}
+.btn--gold:hover{background:#28baf0}
+.btn--forest{background:var(--f950);color:#fff}
+.btn--forest:hover{background:#15212a}
+.btn--outline-dark{border-color:var(--f950);color:var(--f950)}
+.btn--outline-dark:hover{background:var(--f950);color:#fff}
+
+.hero{
+  min-height:760px;
+  background-image:
+    linear-gradient(90deg,rgba(3,7,10,.94),rgba(3,7,10,.78) 52%,rgba(3,7,10,.38)),
+    url('../img/hope-lawn-care-metairie.webp');
+  background-position:center;
+  background-size:cover;
+}
+.hero__inner{
+  grid-template-columns:minmax(0,1fr) 430px;
+  gap:56px;
+  padding:78px 0 86px;
+}
+.hero__title span{color:var(--gold2)}
+.hero__micro i{color:var(--gold2)}
+
+.quote-card{
+  width:100%;
+  max-width:430px;
+  justify-self:end;
+  padding:34px 30px 28px;
+}
+.quote-card,.contact-form-panel{border-top-color:var(--gold)}
+.quote-card__kicker{color:#007fac;margin-bottom:5px}
+.quote-card h2,.contact-form-panel h2{font-size:2.15rem;line-height:1.02;margin-bottom:22px}
+.form-grid{gap:16px}
+.form-row{gap:14px}
+.field{min-width:0;gap:7px}
+.field label{font-size:.75rem;line-height:1.25}
+.field input,.field textarea,.field select{
+  min-height:48px;
+  padding:11px 12px;
+  border-color:#cedae0;
+  border-radius:10px;
+}
+.field select{padding-right:34px}
+.field textarea{min-height:104px;line-height:1.45}
+.field input:focus,.field textarea:focus,.field select:focus{
+  border-color:var(--gold);
+  box-shadow:0 0 0 3px rgba(0,169,232,.14);
+}
+.form-consent{grid-template-columns:20px minmax(0,1fr);gap:10px;font-size:.7rem;line-height:1.45}
+.form-consent input{width:16px;height:16px;margin:3px 0 0}
+.form-consent span{display:block}
+.form-note{text-align:center;font-size:.72rem}
+.quote-card .btn--wide{min-height:52px}
+
+.trust-strip{background:var(--gold);color:#fff}
+.trust-item{border-right-color:rgba(255,255,255,.25)}
+.media-stack__accent{background:var(--f950)}
+.media-stack__accent strong{color:var(--gold2)}
+.check-list i,.area-list i{color:var(--gold)}
+.services-section{background:var(--f950)}
+.service-card{background:var(--f800)}
+.service-card:after{background:linear-gradient(180deg,transparent 25%,rgba(4,8,11,.96))}
+.service-card__icon{background:var(--gold);color:#fff}
+.service-card__link{color:var(--gold2)}
+
+.process{background:#eaf8fe}
+.process__head .eyebrow{color:#007fac}
+.process__head .eyebrow:before{background:var(--gold)}
+.process-step__num{background:var(--f950);color:var(--gold2)}
+.process-step p{color:#53646f}
+.process-step:not(:last-child):after{border-color:rgba(0,125,172,.30)}
+
+.area-map{
+  background-image:
+    linear-gradient(rgba(3,7,10,.08),rgba(3,7,10,.08)),
+    url('../img/hope-lawn-care-metairie.webp');
+  background-position:center;
+}
+.final-cta{
+  background-image:
+    linear-gradient(90deg,rgba(3,7,10,.96),rgba(3,7,10,.68)),
+    url('../img/hope-evening-property-care.webp');
+}
+.site-footer{background:#020406}
+.footer-brand img{width:245px;height:auto;max-height:none;object-fit:contain}
+.socials a:hover{background:var(--gold);color:#fff}
+.contact-point__icon{background:var(--gold);color:#fff}
+.sidebar-card,.contact-card{background:var(--f950)}
+.mobile-cta{background:var(--f950)}
+.mobile-cta a:last-child{background:var(--gold);color:#fff}
+.location-keywords a:hover{background:var(--gold);color:#fff}
+.seo-card a,.city-card a,.local-link-box a{color:#007fac;text-decoration-color:rgba(0,127,172,.35)}
+
+.page-hero{
+  background-image:
+    linear-gradient(90deg,rgba(3,7,10,.94),rgba(3,7,10,.50)),
+    var(--page-bg);
+}
+.prose-image img{object-position:center}
+.gallery-item img{object-position:center}
+
+@media(max-width:1180px){
+  .hero__inner{grid-template-columns:minmax(0,1fr) 395px;gap:36px}
+  .quote-card{max-width:395px;padding:30px 25px 26px}
+}
+@media(max-width:900px){
+  .hero__inner{grid-template-columns:1fr;padding:70px 0 76px}
+  .quote-card{justify-self:start;max-width:620px}
+}
+@media(max-width:820px){
+  .site-header__inner{min-height:88px}
+  .logo img{width:142px;max-height:70px}
+}
+@media(max-width:560px){
+  .logo img{width:126px;max-height:64px}
+  .hero{background-position:42% center}
+  .quote-card,.contact-form-panel{padding:26px 20px}
+  .quote-card h2,.contact-form-panel h2{font-size:1.95rem}
+  .form-grid{gap:15px}
+  .form-row{grid-template-columns:1fr;gap:15px}
+}
+/* HOPE BRAND V3 END */
+
+
+/* GOOGLE REVIEW SECTION V4 */
+.google-review-section{background:#f8fafb}
+.google-review-panel{
+  position:relative;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:180px minmax(0,1fr) 270px;
+  align-items:center;
+  gap:38px;
+  padding:48px 52px;
+  border:1px solid rgba(0,169,232,.26);
+  border-radius:26px;
+  background:
+    radial-gradient(circle at 92% 10%,rgba(0,169,232,.25),transparent 31%),
+    linear-gradient(135deg,#05080b 0%,#0b151c 70%,#0b202a 100%);
+  color:#fff;
+  box-shadow:0 24px 65px rgba(4,15,22,.18)
+}
+.google-review-panel:after{
+  content:"";
+  position:absolute;
+  width:260px;
+  height:260px;
+  right:-115px;
+  bottom:-165px;
+  border:42px solid rgba(76,198,242,.10);
+  border-radius:50%;
+  pointer-events:none
+}
+.google-review-badge{display:grid;justify-items:center;gap:13px;text-align:center;font-size:.75rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.78)}
+.google-review-g{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#00a9e8;font-family:Inter,system-ui,sans-serif;font-size:3.75rem;font-weight:900;line-height:1;box-shadow:0 16px 36px rgba(0,0,0,.30)}
+.google-review-copy{position:relative;z-index:1}
+.google-review-stars{display:flex;gap:7px;color:var(--gold2);margin-bottom:14px}
+.google-review-stars svg{width:22px;height:22px;fill:currentColor;stroke:currentColor}
+.google-review-copy h2{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:clamp(2rem,4vw,3.45rem);line-height:1;letter-spacing:-.02em;margin:0 0 14px;max-width:720px}
+.google-review-copy p{margin:0;max-width:720px;color:rgba(255,255,255,.74);font-size:.95rem}
+.google-review-action{position:relative;z-index:1;display:grid;gap:12px;justify-items:stretch}
+.btn--google{background:var(--gold);color:#fff;min-height:58px;padding:0 22px;text-align:center;box-shadow:0 14px 34px rgba(0,169,232,.25)}
+.btn--google:hover{background:#29bdf3;color:#fff}
+.btn--google svg{width:17px;height:17px}
+.google-review-action span{text-align:center;color:rgba(255,255,255,.58);font-size:.7rem;line-height:1.45}
+@media(max-width:980px){
+  .google-review-panel{grid-template-columns:130px minmax(0,1fr);gap:28px;padding:40px}
+  .google-review-action{grid-column:2;max-width:340px}
+  .google-review-g{width:76px;height:76px;font-size:3rem}
+}
+@media(max-width:680px){
+  .google-review-panel{grid-template-columns:1fr;gap:24px;padding:34px 24px;text-align:center}
+  .google-review-badge{justify-items:center}
+  .google-review-copy h2{font-size:2.35rem}
+  .google-review-copy p{font-size:.9rem}
+  .google-review-stars{justify-content:center}
+  .google-review-action{grid-column:auto;width:100%;max-width:100%}
+  .btn--google{width:100%}
+}
+/* END GOOGLE REVIEW SECTION V4 */
+
+
+/* HOPE LAYOUT V6 — CONTAINER & SPACING CORRECTION */
+:root{
+  --container:1200px;
+  --section-space:88px;
+  --section-space-sm:64px;
+}
+.container{width:min(calc(100% - 48px),var(--container));margin-inline:auto}
+.section-pad{padding:var(--section-space) 0}
+.section-pad--sm{padding:var(--section-space-sm) 0}
+.section-title{font-size:clamp(2.25rem,4.2vw,4.15rem);margin:12px 0 18px}
+.section-copy{font-size:1rem;line-height:1.7}
+
+.topbar__inner{min-height:34px}
+.site-header__inner{
+  min-height:82px;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  gap:24px;
+}
+.logo img{width:150px;max-height:66px}
+.nav{gap:2px}
+.nav__link,.nav__button{padding:10px 10px;font-size:.7rem}
+.header-actions{gap:14px}
+.header-phone{font-size:1rem}
+.menu-toggle svg{display:block;width:22px;height:22px}
+
+.hero{min-height:700px}
+.hero__inner{
+  grid-template-columns:minmax(0,1fr) 400px;
+  gap:52px;
+  padding:62px 0 66px;
+}
+.hero__content{max-width:700px}
+.hero__title{
+  max-width:700px;
+  margin:16px 0 22px;
+  font-size:clamp(3.25rem,5.35vw,5.5rem);
+  line-height:.92;
+  letter-spacing:-.03em;
+}
+.hero__title-main,.hero__title-location{display:block}
+.hero__title-main{color:#fff!important}
+.hero__title-location{color:var(--gold2)!important;margin-top:4px}
+.hero__copy{max-width:625px;font-size:1rem;line-height:1.7;margin:0}
+.hero__actions{margin-top:24px}
+.hero__micro{margin-top:24px;gap:13px 22px;font-size:.8rem}
+
+.quote-card{
+  max-width:400px;
+  padding:28px 26px 24px;
+  border-radius:16px;
+}
+.quote-card__kicker{font-size:.68rem;margin-bottom:4px}
+.quote-card h2,.contact-form-panel h2{font-size:1.85rem;margin-bottom:18px}
+.form-grid{gap:14px}
+.form-row{gap:12px}
+.field{gap:6px}
+.field label{font-size:.71rem}
+.field input,.field textarea,.field select{min-height:44px;padding:10px 11px;border-radius:9px;font-size:.92rem}
+.field textarea{min-height:88px}
+.form-consent{grid-template-columns:18px minmax(0,1fr);gap:9px;font-size:.64rem;line-height:1.4}
+.form-consent input{width:15px;height:15px;margin-top:2px}
+.form-note{font-size:.66rem;line-height:1.4}
+.quote-card .btn--wide{min-height:48px}
+
+.trust-item{min-height:78px;padding:16px 12px;font-size:.7rem}
+.about-grid{gap:56px}
+.media-stack{min-height:520px}
+.section-head-row{margin-bottom:36px}
+.services-grid{gap:16px}
+.service-card{min-height:370px}
+.process__head{margin-bottom:36px}
+.process-grid{gap:22px}
+.gallery-grid{gap:12px}
+.faq-grid,.areas-grid{gap:56px}
+.standard-cards{gap:14px}
+.google-review-panel{padding:40px 44px;gap:32px}
+.final-cta{padding:68px 0}
+.footer-main{padding:58px 0 42px;gap:38px}
+
+.page-hero{min-height:420px}
+.page-hero__inner{padding:74px 0 62px}
+.page-hero h1{font-size:clamp(3rem,5.5vw,5.25rem);max-width:820px}
+.content-grid{grid-template-columns:minmax(0,1fr) 330px;gap:48px}
+.contact-layout{gap:48px}
+
+@media(max-width:1180px){
+  .container{width:min(calc(100% - 40px),1120px)}
+  .hero__inner{grid-template-columns:minmax(0,1fr) 380px;gap:36px}
+  .hero__title{font-size:clamp(3.15rem,5.6vw,5rem)}
+  .quote-card{max-width:380px;padding:26px 23px 22px}
+}
+@media(max-width:980px){
+  :root{--section-space:76px;--section-space-sm:56px}
+  .hero{min-height:auto}
+  .hero__inner{grid-template-columns:1fr;gap:38px;padding:64px 0 70px}
+  .hero__content{max-width:760px}
+  .hero__title{max-width:760px;font-size:clamp(3.25rem,8.3vw,5.25rem)}
+  .quote-card{justify-self:start;max-width:620px}
+  .about-grid,.faq-grid,.areas-grid,.contact-layout{gap:42px}
+}
+@media(max-width:820px){
+  .container{width:min(calc(100% - 32px),720px)}
+  .site-header__inner{min-height:76px;grid-template-columns:1fr auto 1fr;gap:14px}
+  .logo img{width:136px;max-height:60px}
+  .hero__inner{padding:54px 0 60px}
+  .hero__micro{gap:10px 16px}
+  .section-head-row{margin-bottom:30px}
+  .footer-main{gap:30px}
+}
+@media(max-width:560px){
+  :root{--section-space:58px;--section-space-sm:46px}
+  .container{width:calc(100% - 28px)}
+  .topbar{display:none}
+  .site-header__inner{min-height:72px;grid-template-columns:1fr auto 1fr}
+  .logo img{width:126px;max-height:56px}
+  .hero__inner{padding:44px 0 50px;gap:30px}
+  .hero__title{font-size:clamp(2.65rem,13.5vw,4rem);line-height:.94;margin:12px 0 18px}
+  .hero__copy{font-size:.94rem;line-height:1.62}
+  .hero__actions{display:grid;grid-template-columns:1fr;max-width:320px;margin-top:22px}
+  .hero__actions .btn{width:100%}
+  .hero__micro{display:grid;gap:9px;margin-top:20px}
+  .quote-card,.contact-form-panel{padding:24px 18px 20px}
+  .quote-card h2,.contact-form-panel h2{font-size:1.72rem}
+  .form-row{grid-template-columns:1fr}
+  .field input,.field textarea,.field select{font-size:16px}
+  .trust-strip__grid{grid-template-columns:1fr 1fr}
+  .trust-item{min-height:66px;padding:12px 8px;font-size:.63rem}
+  .trust-item:last-child{grid-column:1/-1}
+  .media-stack{min-height:410px}
+  .media-stack__main{inset:0 42px 34px 0}
+  .media-stack__accent{width:47%;padding:18px;border-width:7px}
+  .section-title{font-size:clamp(2rem,9.8vw,3rem);overflow-wrap:anywhere}
+  .service-card{min-height:340px}
+  .google-review-panel{padding:30px 20px}
+  .final-cta{padding:54px 0}
+  .page-hero{min-height:360px}
+  .page-hero__inner{padding:58px 0 48px}
+  .page-hero h1{font-size:clamp(2.5rem,12vw,4rem)}
+}
+/* END HOPE LAYOUT V6 */

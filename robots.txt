@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /send-quote.php
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
