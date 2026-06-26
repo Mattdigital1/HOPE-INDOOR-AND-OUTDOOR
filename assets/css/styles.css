@@ -344,6 +344,9 @@ body{background:var(--cream)}
   .hero__micro{gap:10px 16px}
   .section-head-row{margin-bottom:30px}
   .footer-main{gap:30px}
+  .content-grid{grid-template-columns:1fr}
+  .sidebar-card{position:static;margin-top:32px}
+  .contact-layout{grid-template-columns:1fr}
 }
 @media(max-width:560px){
   :root{--section-space:58px;--section-space-sm:46px}
