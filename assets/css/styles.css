@@ -81,7 +81,7 @@ body{background:var(--cream)}
   width:100%;
   max-width:430px;
   justify-self:end;
-  padding:34px 30px 28px;
+  padding:34px 30px 20px;
 }
 .quote-card,.contact-form-panel{border-top-color:var(--gold)}
 .quote-card__kicker{color:#007fac;margin-bottom:5px}
@@ -157,7 +157,7 @@ body{background:var(--cream)}
 
 @media(max-width:1180px){
   .hero__inner{grid-template-columns:minmax(0,1fr) 395px;gap:36px}
-  .quote-card{max-width:395px;padding:30px 25px 26px}
+  .quote-card{max-width:395px;padding:30px 25px 18px}
 }
 @media(max-width:900px){
   .hero__inner{grid-template-columns:1fr;padding:70px 0 76px}
